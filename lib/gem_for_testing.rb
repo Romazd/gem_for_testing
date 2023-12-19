@@ -3,6 +3,7 @@
 require_relative "gem_for_testing/version"
 
 module GemForTesting
-  class Error < StandardError; end
-  # Your code goes here...
+  def message_by_class(obj)
+    "This is a #{obj.class}"
+  end
 end
